@@ -1,0 +1,29 @@
+{
+  "name": "tako.github.io",
+  "version": "1.0.0",
+  "description": "Website",
+  "scripts": {
+    "start": "vitepress dev",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Takuro Kitahara",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "https://takojs.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takojs/takojs.github.io.git"
+  },
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.13"
+  },
+  "engines": {
+    "node": "^22.18.0 || ^24.0.0",
+    "npm": "^10.9.3 || ^11.0.0"
+  },
+  "packageManager": "npm@11.6.1",
+  "private": true
+}
