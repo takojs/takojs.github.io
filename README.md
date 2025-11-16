@@ -1,3 +1,3 @@
-# tako.github.io
+# takojs.github.io
 
 Website
