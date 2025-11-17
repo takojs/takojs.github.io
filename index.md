@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: motivation.md
       link: https://github.com/takojs/tako/blob/main/motivation.md
+    - theme: alt
+      text: Roadmap
+      link: https://github.com/takojs/tako/issues/1
 
 features:
   - icon: 🌐
@@ -37,14 +40,46 @@ features:
     details: Tiny and with zero dependencies.
 ---
 
-```bash
+::: code-group
+
+```bash [npm]
 npm install @takojs/tako
 ```
 
-```typescript
+```bash [yarn]
+yarn add @takojs/tako
+```
+
+```bash [pnpm]
+pnpm add @takojs/tako
+```
+
+```bash [deno]
+deno add jsr:@takojs/tako
+```
+
+```bash [bun]
+bun add @takojs/tako
+```
+
+:::
+
+::: code-group
+
+```javascript [main.mjs]
 import { Tako } from "@takojs/tako";
 
 const tako = new Tako();
 
 tako.cli({}, (c) => c.print({ message: crypto.randomUUID() }));
 ```
+
+```typescript [main.mts]
+import { Tako } from "@takojs/tako";
+
+const tako = new Tako();
+
+tako.cli({}, (c) => c.print({ message: crypto.randomUUID() }));
+```
+
+:::
