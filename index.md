@@ -71,7 +71,7 @@ import { Tako } from "@takojs/tako";
 
 const tako = new Tako();
 
-tako.cli({}, (c) => c.print({ message: crypto.randomUUID() }));
+await tako.cli({}, (c) => c.print({ message: crypto.randomUUID() }));
 ```
 
 ```typescript [main.mts]
@@ -79,7 +79,15 @@ import { Tako } from "@takojs/tako";
 
 const tako = new Tako();
 
-tako.cli({}, (c) => c.print({ message: crypto.randomUUID() }));
+await tako.cli({}, (c) => c.print({ message: crypto.randomUUID() }));
+```
+
+```typescript [main.ts]
+import { Tako } from "jsr:@takojs/tako";
+
+const tako = new Tako();
+
+await tako.cli({}, (c) => c.print({ message: crypto.randomUUID() }));
 ```
 
 :::
